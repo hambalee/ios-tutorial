@@ -16,6 +16,7 @@
 		80A89A9D28F439CE002BD0C2 /* iOS_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A89A9C28F439CE002BD0C2 /* iOS_TutorialTests.swift */; };
 		80A89AA728F439CE002BD0C2 /* iOS_TutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A89AA628F439CE002BD0C2 /* iOS_TutorialUITests.swift */; };
 		80A89AA928F439CE002BD0C2 /* iOS_TutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A89AA828F439CE002BD0C2 /* iOS_TutorialUITestsLaunchTests.swift */; };
+		80A89AB628F44036002BD0C2 /* Basic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A89AB528F44036002BD0C2 /* Basic.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		80A89AA228F439CE002BD0C2 /* iOS TutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS TutorialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A89AA628F439CE002BD0C2 /* iOS_TutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_TutorialUITests.swift; sourceTree = "<group>"; };
 		80A89AA828F439CE002BD0C2 /* iOS_TutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_TutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80A89AB528F44036002BD0C2 /* Basic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Basic.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				80A89A8E28F439CE002BD0C2 /* Assets.xcassets */,
 				80A89A9028F439CE002BD0C2 /* LaunchScreen.storyboard */,
 				80A89A9328F439CE002BD0C2 /* Info.plist */,
+				80A89AB528F44036002BD0C2 /* Basic.storyboard */,
 			);
 			path = "iOS Tutorial";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A89A9228F439CE002BD0C2 /* LaunchScreen.storyboard in Resources */,
+				80A89AB628F44036002BD0C2 /* Basic.storyboard in Resources */,
 				80A89A8F28F439CE002BD0C2 /* Assets.xcassets in Resources */,
 				80A89A8D28F439CE002BD0C2 /* Main.storyboard in Resources */,
 			);
@@ -451,9 +455,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hambalee.iOS-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,9 +485,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hambalee.iOS-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

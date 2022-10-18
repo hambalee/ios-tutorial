@@ -1,24 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="BsK-it-5ip">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="zle-3d-tW6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1yg-0u-5bZ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNI-WB-eCW">
+                                <rect key="frame" x="158" y="405" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YQt-Ju-JlG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rMa-dK-niT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdS-nj-dwK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830.76923076923072" y="-675.35545023696682"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vwT-8c-idK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gTW-93-CxP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="usV-92-57v">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zle-3d-tW6" kind="relationship" relationship="rootViewController" id="cc8-64-fbm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2L-CP-sLs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.461538461538453" y="-675.35545023696682"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2gC-9H-gNH">
+            <objects>
+                <viewController id="fY4-II-AQP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3pu-Rs-SWm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1998592" translatesAutoresizingMaskIntoConstraints="NO" id="0p5-aS-mAp">
+                                <rect key="frame" x="145" y="147" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2wZ-bJ-uVS"/>
+                                    <constraint firstAttribute="height" constant="100" id="RC8-e3-jDr"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBn-Hr-p1X">
+                                <rect key="frame" x="24" y="347" width="342" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M0A-8W-oCX">
+                                <rect key="frame" x="24" y="405" width="342" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pj8-3Q-pV7">
+                                <rect key="frame" x="140" y="479" width="110" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c3y-3C-ppq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M0A-8W-oCX" firstAttribute="leading" secondItem="c3y-3C-ppq" secondAttribute="leading" constant="24" id="2UE-IE-Ssk"/>
+                            <constraint firstItem="M0A-8W-oCX" firstAttribute="leading" secondItem="c3y-3C-ppq" secondAttribute="leading" constant="24" id="OQI-qu-gb3"/>
+                            <constraint firstItem="qBn-Hr-p1X" firstAttribute="top" secondItem="0p5-aS-mAp" secondAttribute="bottom" constant="100" id="T91-wy-OX6"/>
+                            <constraint firstItem="c3y-3C-ppq" firstAttribute="trailing" secondItem="M0A-8W-oCX" secondAttribute="trailing" constant="24" id="TTp-Og-t8C"/>
+                            <constraint firstItem="c3y-3C-ppq" firstAttribute="trailing" secondItem="qBn-Hr-p1X" secondAttribute="trailing" constant="24" id="Wku-Rq-d6H"/>
+                            <constraint firstItem="0p5-aS-mAp" firstAttribute="top" secondItem="c3y-3C-ppq" secondAttribute="top" constant="100" id="a2l-cn-9mk"/>
+                            <constraint firstItem="qBn-Hr-p1X" firstAttribute="leading" secondItem="c3y-3C-ppq" secondAttribute="leading" constant="24" id="d3u-gR-nUq"/>
+                            <constraint firstItem="M0A-8W-oCX" firstAttribute="top" secondItem="qBn-Hr-p1X" secondAttribute="bottom" constant="24" id="kxC-Zx-4xh"/>
+                            <constraint firstItem="0p5-aS-mAp" firstAttribute="centerX" secondItem="3pu-Rs-SWm" secondAttribute="centerX" id="mkH-ot-UsI"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APw-23-dXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1741.5384615384614" y="-675.35545023696682"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1998592" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
